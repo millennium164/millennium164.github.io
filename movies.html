@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title -->
+        <title>Millene Y. Russo</title>
+        <!-- Linking bootstrap libraries -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- Linking css file -->
+        <link href="styles.css" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body style="background-color: #ccc;">
+        <!-- Navigation bar -->
+        <div class="container1">
+            <div class="navbar">
+                <div class="name">
+                    Millene Y. Russo
+                </div>
+                <a href='index.html'>Home</a>
+                <a href='career.html'>Career</a>
+                <a href='highlights.html'>Highlights</a>
+                <a href='movies.html'>Movies</a>
+            </div>
+        </div>
+        <script>
+            // Changing image tag src value acording to radio input
+            function movie() {
+                const pic = document.querySelector('input[name="mv"]:checked');
+                const imgtag = document.getElementById("image");
+                if (pic) {
+                    const op = pic.value;
+                    if (op == 1) {
+                        imgtag.src = "images/pt.jpeg";
+                    } else if (op == 2) {
+                        imgtag.src = "images/ee.jpg";
+                    } else if (op == 3) {
+                        imgtag.src = "images/bs.webp";
+                    } else if (op == 4) {
+                        imgtag.src = "images/inc.jpg";
+                    } else if (op == 5) {
+                        imgtag.src = "images/int.jpg";
+                    } else if (op == 6) {
+                        imgtag.src = "images/par.webp";
+                    } else if (op == 7) {
+                        imgtag.src = "images/hoi.jpg";
+                    } else if (op == 8) {
+                        imgtag.src = "images/vil.jpg"
+                    } else if (op == 9) {
+                        imgtag.src = "images/ts.jpg"
+                    } else if (op == 10) {
+                        imgtag.src = "images/hs.webp"
+                    } else if (op == 11) {
+                        imgtag.src = "images/rk.jpg"
+                    } else if (op == 12) {
+                        imgtag.src = "images/pp.jpg"
+                    }
+                    
+                    imgtag.style.display = "block";
+                } else {
+                    imgtag.style.display = "none";
+                }
+            }
+        </script>
+        <!-- Header -->
+        <div class="container">
+            <h1>"Life imitates art far more than art imitates life."</h1>
+            <p>Oscar Wilde</p>
+        </div>
+        <!-- Section for form and image -->
+        <section>
+            <div>
+                <h3>Movies</h3>
+                <form>
+                    <label>
+                        <input type="radio" name="mv" value="1" onchange="movie()"> Poor Things 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="2" onchange="movie()"> Everything Everywhere all at Once
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="3" onchange="movie()"> Black Swan
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="4" onchange="movie()"> Inception
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="5" onchange="movie()"> Interestellar
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="6" onchange="movie()"> Parasite
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="7" onchange="movie()"> The Half of it
+                    </label><br><br>
+                    <h3>Characters</h3>
+                    <label>
+                        <input type="radio" name="mv" value="8" onchange="movie()"> Villanelle
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="9" onchange="movie()"> Thomas Shelby
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="10" onchange="movie()"> Dr. House
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="11" onchange="movie()"> Rick Sanchez
+                    </label><br>
+                    <label>
+                        <input type="radio" name="mv" value="12" onchange="movie()"> Peter Parker
+                    </label>
+                </form><br>
+            </div>
+            <img id="image" style="display: none;" alt="image from movie">
+        </section>
+    </body>
+</html>
