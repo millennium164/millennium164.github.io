@@ -28,24 +28,6 @@
                 <a href='movies.html'>Movies</a>
             </div>
         </div>
-        <script>
-            const carousel = document.querySelector('.carousel');
-            let currentIndex = 0;
-            const totalItems = document.querySelectorAll('.carousel-item').length;
-
-            function showNextImage() {
-                currentIndex = (currentIndex + 1) % totalItems;
-                updateCarousel();
-            }
-
-            function updateCarousel() {
-                const offset = -currentIndex * 100; // Cada imagem ocupa 100% da largura do contêiner
-                carousel.style.transform = `translateX(${offset}%)`;
-            }
-
-            // Troca de imagem a cada 3 segundos
-            setInterval(showNextImage, 3000);
-        </script>
         <!-- Header -->
         <div class="container">
             <h1>We can't predit the future, but we can create it.</h1>
@@ -57,18 +39,22 @@
         <div class="container2">
             <div class="briefing">
                 <h3 class="brf">Briefing</h3>
-                <p style="text-indent: 50px;">
+                <p>
                     I find myself in a continuous search for knowledge; about everything. And despite the great joy ideas already provide, I'm also always looking foward for more concrete delight. Because as Walter Isaacson writes and I came to strongly agree, theory alone tends to pure imagination, which is hallucination; practice alone, on the other hand, tends to pure execution, which is esterile. Having instead not only the "know how", the practical part, but also the "know why", the understanding behind the process, is key to innovation, more especifically, to technological innovation.
                 </p>
-            </div>
-        </div>
-        <!-- Carrousel -->
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item"><img src="images/ts.jpg" alt="Image 1"></div>
-                <div class="carousel-item"><img src="images/ts.jpg" alt="Image 2"></div>
-                <div class="carousel-item"><img src="images/ts.jpg" alt="Image 3"></div>
-                <div class="carousel-item"><img src="images/ts.jpg" alt="Image 4"></div>
+                <h3 class="brf">Resume</h3>
+                <p>
+                    I am currently a Software Engineering student in FIAP. My undergraduate journey, however, started 3 years ago. In 2021 I initiated Physics Engineering in UFSCar, a Federal University in Brazil, one of the greatests institutions in the country. Soon after, in 2022, I was awarded <i>University Talent</i> from CAPES, the same time period in which I started an intership at Pentagro, reference in agroindustry 4.0.
+                </p>
+                <p>
+                    Around the middle of 2023, however, I decided to drop out of college. And since I was in one of the best institutions for exact sciences, innovation and technology, my decision may seem pretty illogical at first thought. My argument back then was that the university was not what I was expecting: not all people were great and dedicated students; sometimes the public system was not very efficient; student strikes often compromised regular classes... just not the radiant and perfect image of the intellectual environment I had in my mind. But that was the problem; I used to think that "ideal" or "almost perfect" could fit reality.
+                </p>
+                <p>
+                    In High school, preparing for universities admission tests, that mindset fitted really well. I was in a predictable environment, in which I knew the variables to take into account, and causality was straight and absolute. Therefore, if I gained domain over the parameters with hard work, success was granted. I knew how many questions to solve, the time limit, all the topics I had to study and, the most important, a measurable and concrete goal. Everything could be placed in a closed and perfect system (or placed in post-its all over your room). And I mastered it. All highest scores, praises and awards for outstanding performance and all success.
+                </p>
+                <p>
+                    When going to college and real life, however, little did I know that "predictable", "control" and "ideal" are words that could not be applied anymore. There are countless and actually infinite variables involved, and it's not even possible to have only one simple and concrete goal to achive, in such a way that if you try to control this uncontrollable environment you will eventually get frustrated. And that is what happened to me. Balancing multiple espheres at once: college tasks and work demands; integrating different social groups; trying to find your path amongst infinite possibilities... all this unpredictability by itself and you except "perfect" or "ideal" in every single esphere? It simply is not possible. And today I know that the real reason why I left college was because I couldn't deal with the fact that I had no control over everything. I used to think it was because the university or any other aspect was not "ideal", but the crushing reality was that I was not ideal. No one can be.
+                </p>
             </div>
         </div>
         <!-- Links -->

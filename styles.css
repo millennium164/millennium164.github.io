@@ -46,6 +46,10 @@ body {
     padding: 10px;
 }
 
+.briefing p {
+    text-indent: 50px;
+}
+
 .brf {
     text-align: center;
 }
