@@ -172,32 +172,47 @@ h3 {
     top: 200px;
 }
 
-section div {
-    position: relative;
-    float: left;
-    width: 30%;
-    top: 130px;
-    margin: 30px;
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: auto;
+    margin: 100px 50px 100px 100px;
+}
+
+.forms {
+    width: 23%;
     padding: 30px;
     color: black;
-    background: #B3513C;
+    background: #dac292;
     border: 2px solid black;
 }
 
-#image {
+.imcontainer {
+    margin: 30px auto;
     position: relative;
-    display: block;
-    float: left;
-    left: 100px;
-    width: 50%;
-    top: 160px;
-    border: 2px solid
+    overflow: hidden;
+    max-width: 620px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff
+}
+
+.imcont {
+    box-sizing: border-box;
+    min-width: 100%;
+}
+
+#image {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .contact {
     position: fixed;
     bottom: 30px;
-    left: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact a {
